@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Densodim/hws2/static/css/main.07c56d00.css",
-    "main.js": "/Densodim/hws2/static/js/main.2dd0b9ab.js",
+    "main.css": "/Densodim/hws2/static/css/main.a5205f93.css",
+    "main.js": "/Densodim/hws2/static/js/main.a6097b59.js",
     "static/js/787.66cb4309.chunk.js": "/Densodim/hws2/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/Densodim/hws2/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/Densodim/hws2/index.html",
-    "main.07c56d00.css.map": "/Densodim/hws2/static/css/main.07c56d00.css.map",
-    "main.2dd0b9ab.js.map": "/Densodim/hws2/static/js/main.2dd0b9ab.js.map",
+    "main.a5205f93.css.map": "/Densodim/hws2/static/css/main.a5205f93.css.map",
+    "main.a6097b59.js.map": "/Densodim/hws2/static/js/main.a6097b59.js.map",
     "787.66cb4309.chunk.js.map": "/Densodim/hws2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07c56d00.css",
-    "static/js/main.2dd0b9ab.js"
+    "static/css/main.a5205f93.css",
+    "static/js/main.a6097b59.js"
   ]
 }
