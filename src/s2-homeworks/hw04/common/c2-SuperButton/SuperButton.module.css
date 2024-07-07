@@ -1,36 +1,69 @@
 .button {
+    background-color: #4CAF50; /* Зеленый фон */
+    border: none; /* Убираем границы */
+    color: white; /* Белый текст */
+    padding: 15px 32px; /* Внутренние отступы */
+    text-align: center; /* Текст по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Делаем элемент блочным */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Внешние отступы */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 8px; /* Закругленные углы */
+    transition-duration: 0.4s; /* Плавные изменения */
 }
 
+
 .disabled {
+    background-color: #cccccc; /* Серый фон */
+    color: #666666; /* Темно-серый текст */
+    cursor: not-allowed; /* Запрещающий курсор */
+    border: none; /* Убираем границы */
 }
 
 .secondary {
+    background-color: #e7e7e7; /* Светло-серый фон */
+    color: black; /* Черный текст */
 }
 
 .default {
+
 }
 
 .red {
+    background-color: #f44336; /* Красный фон */
 }
 
 .default:hover {
+    background-color: white; /* Цвет фона при наведении */
+    color: black; /* Цвет текста при наведении */
+    border: 2px solid #4CAF50; /* Зеленая граница при наведении */
 }
 
 .red:hover {
+    background-color: #d32f2f; /* Темно-красный фон при наведении */
 }
 
 .secondary:hover {
+    background-color: #d5d5d5; /* Темно-серый фон при наведении */
 }
 
 
 .default:active {
+    background-color: #45a049; /* Темно-зеленый фон при нажатии */
 }
 
 .secondary:active {
+    background-color: #bdbdbd; /* Темно-серый фон при нажатии */
 }
 
 .red:active {
+    background-color: #c62828; /* Темно-красный фон при нажатии */
 }
 
 .button:disabled {
+    background-color: #cccccc; /* Серый фон */
+    color: #666666; /* Темно-серый текст */
+    cursor: not-allowed; /* Запрещающий курсор */
+    border: none; /* Убираем границы */
 }

@@ -1,20 +1,44 @@
-.input:focus {
+.input:focus + label,
+input:not(:placeholder-shown)+label
+{
+    transform: translateY(-1.5rem);
+    font-size: 0.8rem;
 }
 
 .input {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    outline: none;
+
+}
+.input:focus-visible {
+    border-color: #0059b3;
 }
 
 .inputWrapper {
+    position: relative;
+
+}
+.input::placeholder{
+    opacity: 0;
 }
 
 .superInput {
+    position: absolute;
+    left: 2px;
+    transition: 0.2s ease-in-out;
 }
 
 .errorInput {
+    border-color: #f44336; /* Красная граница */
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: #f44336; /* Красный текст */
+    margin-top: 5px;
+    font-size: 12px;
 }
