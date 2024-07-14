@@ -1,86 +1,63 @@
 .sidebar {
+    width: 250px;
+    height: calc(100% - var(--header_height));
     position: fixed;
-    z-index: 2;
-    top: 0;
-    left: -100%;
-    min-height: 100vh;
-    width: 20rem;
-    padding: 3.9375rem 4.375rem;
+    top: var(--header_height);
+    left: -250px;
     background-color: #fff;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
 }
 
 .sidebar.open {
-    left: 0;
+    transform: translateX(250px);
 }
 
 .background {
-    position: absolute;
-    z-index: 2;
-    top: 0;
+    position: fixed;
+    top: var(--header_height);
     left: 0;
+    width: 100%;
+    height: calc(100% - var(--header_height));
     background-color: rgba(0, 0, 0, 0.5);
-    min-width: 100vw;
-    min-height: 1000vh;
+    z-index: 999;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
-    gap: 2.045454545454545em;
+    padding: 20px;
 }
 
-.nav a {
-    font-weight: 600;
-    font-size: 1.375rem;
-    line-height: 1.227272727272727;
+.navLink {
+    color: #333;
     text-decoration: none;
-    color: #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav a:hover {
-    color: #58ACFF;
+.navLink:hover {
+    background-color: #f0f0f0;
 }
 
-.nav a:active {
-    color: #3D6B99;
-}
-
-.nav a.active {
-    text-decoration: underline;
-    color: #0059B2;
+.active {
+    color: #007bff;
+    font-weight: bold;
 }
 
 .close {
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: transparent;
+    top: 10px;
+    right: 10px;
+    background: none;
     border: none;
     cursor: pointer;
 }
 
 .close img {
-    padding: 0.5rem;
-}
-
-@media (max-width: 29.24875em) {
-    .sidebar {
-        padding: 10rem 0 0 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav a {
-        font-size: 2rem;
-        white-space: nowrap;
-    }
-
-    .close img {
-        width: 4rem;
-    }
+    width: 20px;
+    height: 20px;
 }
