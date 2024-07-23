@@ -1,11 +1,29 @@
 .spanBlock {
-}
-
-.span {
-}
-
-.input {
-}
-
-.pen {
-}
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .span {
+   margin-right: 10px;
+   font-size: 16px;
+   color: #333;
+ }
+ 
+ .input {
+   padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;  /* Увеличиваем ширину поля ввода */
+  font-size: 16px;  /* Увеличиваем размер шрифта в поле ввода */
+ }
+ 
+ .pen {
+   padding: 5px 10px;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
