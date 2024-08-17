@@ -16,8 +16,8 @@
   margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 200px;  /* Увеличиваем ширину поля ввода */
-  font-size: 16px;  /* Увеличиваем размер шрифта в поле ввода */
+  width: 200px;  
+  font-size: 16px; 
  }
  
  .pen {
