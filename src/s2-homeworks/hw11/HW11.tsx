@@ -18,10 +18,10 @@ function HW11() {
 
     const change = (event: Event, value: number | number[]) => {
         if (!Array.isArray(value)){
-            setValue1(value as number);
+            setValue1( value);
         }else{
             setValue1(Math.min(value[0], value2 - minDistance));
-            setValue2(Math.max(value[1], value1 + minDistance));
+            setValue2( Math.max(value[1], value1 + minDistance));
         }
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
     }
@@ -39,7 +39,7 @@ function HW11() {
                             value={value1}
                             onChange={change}
                             valueLabelDisplay={"auto"}
-                            disableSwap
+
                             // сделать так чтоб value1 изменялось // пишет студент
 
                         />
@@ -51,7 +51,6 @@ function HW11() {
                             value={[value1, value2]}
                             onChange={(event, value)=>change(event, value)}
                             valueLabelDisplay={"auto"}
-                            disableSwap
                             // сделать так чтоб value1/2 изменялось // пишет студент
 
                         />
