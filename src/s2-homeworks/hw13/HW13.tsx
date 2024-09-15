@@ -38,8 +38,8 @@ const HW13 = () => {
             .then((res) => {
                 setImage(success200)
                 setCode('Код 200!')
-                setText(res.data.info)
-                setInfo(res.data.errorText)
+                setInfo(res.data.info)
+                setText(res.data.errorText)
                 setDisabled(false)
                 // дописать
             })
@@ -47,23 +47,23 @@ const HW13 = () => {
                 if (e.response.status === 500) {
                     setImage(error500)
                     setCode('Код 500!')
-                    setText(e.response.data.info)
-                    setInfo(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                    setText(e.response.data.errorText)
                     setDisabled(false)
                     return
                 }
                 if (e.response.status === 400) {
                     setImage(error400)
                     setCode('Код 400!')
-                    setText(e.response.data.info)
-                    setInfo(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                    setText(e.response.data.errorText)
                     setDisabled(false)
                     return
                 }
                 setImage(error)
                 setCode('Error!')
-                setText(e.message)
-                setInfo(e.name)
+                setInfo(e.message)
+                setText(e.name)
                 setDisabled(false)
                 return
             })
